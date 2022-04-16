@@ -13,66 +13,63 @@
 <link rel="stylesheet" href="./assets/css/style.css">
 
 <body>
+    <div class="body">
+
     <div class="navbar">
-        <h1>ANDY'S INN</h1>
+        <h1 style="font-size: 30px;">ANDY'S INN</h1>
         <a href="index.html"> HOME</a>
     </div>
 
     <div class="container">
-        <div class="BOOK">FILL IN YOUR DETAILS.</div>
-        <form method="POST" action="booking.php">
+        <div id="completed" class="fw-bold fs-3 text-center ">
+            
+        </div>
+
+        <h1 style="font-size: 20px;" class="BOOK">FILL IN YOUR DETAILS.</h1>
+
+        <div id="display" class="fw-bold fs-3 text-center "></div>
+
+        <form class="myform "  id='signup'>
             <table>
                 <tr>
-
-                    <td> First name: </td>
-                    <td><input type="text" name="firstName " required></td>
+                    <td>Your name:</td>
+                    <td><input type="text" id="name" name="full names " required></td>
                 </tr>
                 <tr>
-
-                    <td>Last name:</td>
-                    <td><input type="text" name="lastName " required></td>
-                </tr>
-                <tr>
-
                     <td>Email Address: </td>
-                    <td> <input type="text/number" name="email " required></td>
-
-
+                    <td> <input type="text/number" id="email" name="email " required></td>
                 </tr>
                 <tr>
 
-                    <td>Id Number:</td>
-                    <td><input type="number" name="idNumber " required></td>
+                 <td>   Id Number</td>
+                    <td><input type="number" id="idnumber" name="idNumber " required></td>
 
                 </tr>
-
                 <tr>
-
                     <td> Phone Number:</td>
-                    <td><input type="number" name="phoneNumber " required></td>
-
+                    <td><input type="number" id="phonenumber" name="phoneNumber " required></td>
                 </tr>
                 <tr>
                     <td>Visit Date:</td>
-                    <td><input type="date" name="visitDate " required></td>
-
+                    <td><input type="date" id="date" name="visitDate " required></td>
                 </tr>
                 <tr>
-
                     <td>Number of Attendants: </td>
-                    <td><input type="number" name="attendantsNumber " required></td>
+                    <td><input type="number" id="number" name="attendantsNumber " required></td>
                 </tr>
-
                 <tr>
-
-                    <td> <input type="submit" value="Submit"></td>
-
-
+                    <td>Type of room:</td>
+                    <td><input type="text" id="room" name=" " required></td>
+                </tr>
+                <tr>
+                    <td> <a type="submit"  class="btn btn-primary p-2 " onclick="myfunction()" >submit</a>   </td>
                 </tr>
             </table>
         </form>
     </div>
-
+    
+    <script src="./assets/script.js"></script>
+</div>
 </body>
 
 </html>
